@@ -24,7 +24,7 @@ from dotenv import load_dotenv
 SECRET_KEY = 'django-insecure-(%oa3!(@k#kk)7!m$-vx299fqq(v6k=!a^c5e@h2sbl48k31f!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 load_dotenv()
 ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1:8000']
 
