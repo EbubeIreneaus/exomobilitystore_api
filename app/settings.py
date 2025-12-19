@@ -128,7 +128,6 @@ USE_TZ = True
 
 AUTH_USER_MODEL = 'model.User'
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / 'static/']
 STATIC_ROOT = BASE_DIR / 'static'
 MEDIA_URL = '/media/'  # or any prefix you choose
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
