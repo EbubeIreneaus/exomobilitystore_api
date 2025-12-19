@@ -133,3 +133,4 @@ MEDIA_URL = '/media/'  # or any prefix you choose
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CORS_ALLOW_ALL_ORIGINS=True
+AUTH_USER_MODEL='model.User'
