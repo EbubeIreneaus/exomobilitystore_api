@@ -24,7 +24,7 @@ from dotenv import load_dotenv
 SECRET_KEY = 'django-insecure-(%oa3!(@k#kk)7!m$-vx299fqq(v6k=!a^c5e@h2sbl48k31f!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 load_dotenv()
 ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
@@ -53,7 +53,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
 
 ]
 
@@ -127,7 +126,7 @@ USE_TZ = True
 
 
 AUTH_USER_MODEL = 'model.User'
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 MEDIA_URL = '/media/'  # or any prefix you choose
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
