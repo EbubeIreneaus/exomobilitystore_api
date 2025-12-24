@@ -14,3 +14,4 @@ class OrderSchema(Schema):
     city: str
     address: str
     items: List[ItemSchema]
+    phone: str

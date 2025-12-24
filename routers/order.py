@@ -26,6 +26,7 @@ def post_order(request, body: OrderSchema):
 
             <p><strong>Name:</strong> {body.name}</p>
             <p><strong>Email:</strong> {body.email}</p>
+            <p><strong>Phone:</strong> {body.phone}</p>
             <p><strong>Country:</strong> {body.country}</p>
             <p><strong>City:</strong> {body.city}</p>
             <p><strong>Address:</strong> {body.address}</p>
